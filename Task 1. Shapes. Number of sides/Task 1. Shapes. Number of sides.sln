@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 1. Shapes. Number of sides", "Task 1. Shapes. Number of sides.vcxproj", "{19EEA9F7-16E1-4214-97BD-278E3B546179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Debug|x64.ActiveCfg = Debug|x64
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Debug|x64.Build.0 = Debug|x64
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Debug|x86.ActiveCfg = Debug|Win32
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Debug|x86.Build.0 = Debug|Win32
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Release|x64.ActiveCfg = Release|x64
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Release|x64.Build.0 = Release|x64
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Release|x86.ActiveCfg = Release|Win32
+		{19EEA9F7-16E1-4214-97BD-278E3B546179}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25AAE689-D092-4F27-BDC5-C7F849FC898B}
+	EndGlobalSection
+EndGlobal
