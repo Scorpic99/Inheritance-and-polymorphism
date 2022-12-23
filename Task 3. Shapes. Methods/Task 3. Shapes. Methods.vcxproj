@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{aa6bc6e6-1de3-4b03-9c59-886b32b2acaa}</ProjectGuid>
-    <RootNamespace>Task2ShapesSidesandcorners</RootNamespace>
+    <ProjectGuid>{afd37bfc-6ed3-4e76-a481-d2a6d8227eb9}</ProjectGuid>
+    <RootNamespace>Task3ShapesMethods</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,10 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Task 2. Shapes. Sides and corners.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Old.h" />
+    <ClCompile Include="Task 3. Shapes. Methods.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
