@@ -197,21 +197,27 @@ public:
 void print_shapes(Shapes* shapes) {
     int a = 6, b = 26, c = 64, A = 7, B = 340, C = 45;
 
-    shapes = new RectangularTriangle(a, b, c, A, B);
+    RectangularTriangle objRT(a, b, c, A, B);
+    shapes = &objRT;
     shapes->printFigure();
-    shapes = new IsoscelesTriangle(a, b, 3, 3, 3);
+    IsoscelesTriangle objIT(a, b, 3, 3, 3);
+    shapes = &objIT;
     shapes->printFigure();
-    shapes = new EquilateralTriangle(61);
+    EquilateralTriangle objET(61);
+    shapes = &objET;
     shapes->printFigure();
-    shapes = new Rectangle(2, 2);
+    Rectangle objRec(2, 2);
+    shapes = &objRec;
     shapes->printFigure();
-    shapes = new Square(5);
+    Square objSqu(5);
+    shapes = &objSqu;
     shapes->printFigure();
-    shapes = new Parallelogram(3, 45, 6, 45);
+    Parallelogram objPar(3, 45, 6, 45);
+    shapes = &objPar;
     shapes->printFigure();
-    shapes = new Rhomb(a, b, c, 9, 55, 66);
+    Rhomb objRmb(a, b, c, 9, 55, 66);
+    shapes = &objRmb;
     shapes->printFigure();
-
 }
 
 
@@ -220,9 +226,6 @@ int main()
     setlocale(LC_ALL, "Rus");
     
     Shapes* shapes = new Shapes;
-    Triangle triangle;
-    Quadrilateral quadrilateral;
-
     print_shapes(shapes);
 
 }

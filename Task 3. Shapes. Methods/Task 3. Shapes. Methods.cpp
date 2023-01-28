@@ -156,6 +156,7 @@ public:
 };
 
 class Quadrilateral : public Shapes {
+public:
     void printFigure() override {
         std::cout << name << ":" << std::endl;
         std::cout << validity << std::endl;
@@ -327,27 +328,38 @@ public:
 
 
 void print_shapes(Shapes* shapes) {
-    int a = 6, b = 26, c = 64, d = 43, A = 7, B = 340, C = 45, D = 43;
+    //int a = 6, b = 26, c = 64, d = 43, A = 7, B = 340, C = 45, D = 43;
+    
     shapes->printFigure();
-    shapes = new Triangle(10, 20, 30, 50, 60, 70);
+    Triangle objTri(10, 20, 30, 50, 60, 70);
+    shapes = &objTri;
     shapes->printFigure();
-    shapes = new RectangularTriangle(10, 20, 30, 50, 60, 90);
+    RectangularTriangle objRT(10, 20, 30, 50, 60, 90);
+    shapes = &objRT;
     shapes->printFigure();
-    shapes = new RectangularTriangle(10, 20, 30, 50, 40, 90);
+    RectangularTriangle objRT2(10, 20, 30, 50, 40, 90);
+    shapes = &objRT2;
     shapes->printFigure();
-    shapes = new IsoscelesTriangle(10, 20, 10, 50, 60, 50);
+    IsoscelesTriangle objIT(10, 20, 10, 50, 60, 50);
+    shapes = &objIT;
     shapes->printFigure();
-    shapes = new EquilateralTriangle(30, 30, 30, 60, 60, 60);
+    EquilateralTriangle objET(30, 30, 30, 60, 60, 60);
+    shapes = &objET;
     shapes->printFigure();
-    shapes = new Quadrilateral(61, 4, 5, 6, 5, 4, 4, 5);
+    Quadrilateral objQuad(61, 4, 5, 6, 5, 4, 4, 5);
+    shapes = &objQuad;
     shapes->printFigure();
-    shapes = new Rectangle(10, 20, 10, 20, 90, 90, 90, 90);
+    Rectangle objRec(10, 20, 10, 20, 90, 90, 90, 90);
+    shapes = &objRec;
     shapes->printFigure();
-    shapes = new Square (20, 20, 20, 20, 90, 90, 90, 90);
+    Square objSqu(20, 20, 20, 20, 90, 90, 90, 90);
+    shapes = &objSqu;
     shapes->printFigure();
-    shapes = new Parallelogram(20, 30, 20, 30, 30, 40, 30, 40);
+    Parallelogram objPar(20, 30, 20, 30, 30, 40, 30, 40);
+    shapes = &objPar;
     shapes->printFigure();
-    shapes = new Rhomb(30, 30, 30, 30, 30, 40, 30, 40);
+    Rhomb objRmb(30, 30, 30, 30, 30, 40, 30, 40);
+    shapes = &objRmb;
     shapes->printFigure();
 
 }
@@ -355,10 +367,8 @@ void print_shapes(Shapes* shapes) {
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    Shapes* shapes = new Shapes;
-    Triangle triangle;
-    Quadrilateral quadrilateral;
 
+    Shapes* shapes = new Shapes;
     print_shapes(shapes);
 
 }
