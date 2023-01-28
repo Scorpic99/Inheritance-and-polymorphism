@@ -328,40 +328,8 @@ public:
 
 
 void print_shapes(Shapes* shapes) {
-    //int a = 6, b = 26, c = 64, d = 43, A = 7, B = 340, C = 45, D = 43;
     
     shapes->printFigure();
-    Triangle objTri(10, 20, 30, 50, 60, 70);
-    shapes = &objTri;
-    shapes->printFigure();
-    RectangularTriangle objRT(10, 20, 30, 50, 60, 90);
-    shapes = &objRT;
-    shapes->printFigure();
-    RectangularTriangle objRT2(10, 20, 30, 50, 40, 90);
-    shapes = &objRT2;
-    shapes->printFigure();
-    IsoscelesTriangle objIT(10, 20, 10, 50, 60, 50);
-    shapes = &objIT;
-    shapes->printFigure();
-    EquilateralTriangle objET(30, 30, 30, 60, 60, 60);
-    shapes = &objET;
-    shapes->printFigure();
-    Quadrilateral objQuad(61, 4, 5, 6, 5, 4, 4, 5);
-    shapes = &objQuad;
-    shapes->printFigure();
-    Rectangle objRec(10, 20, 10, 20, 90, 90, 90, 90);
-    shapes = &objRec;
-    shapes->printFigure();
-    Square objSqu(20, 20, 20, 20, 90, 90, 90, 90);
-    shapes = &objSqu;
-    shapes->printFigure();
-    Parallelogram objPar(20, 30, 20, 30, 30, 40, 30, 40);
-    shapes = &objPar;
-    shapes->printFigure();
-    Rhomb objRmb(30, 30, 30, 30, 30, 40, 30, 40);
-    shapes = &objRmb;
-    shapes->printFigure();
-
 }
 
 int main()
@@ -369,7 +337,37 @@ int main()
     setlocale(LC_ALL, "Rus");
 
     Shapes* shapes = new Shapes;
-    print_shapes(shapes);
 
+    print_shapes(shapes);
+    Triangle objTri(10, 20, 30, 50, 60, 70);
+    shapes = &objTri;
+    print_shapes(shapes);
+    RectangularTriangle objRT(10, 20, 30, 50, 60, 90);
+    shapes = &objRT;
+    print_shapes(shapes);
+    RectangularTriangle objRT2(10, 20, 30, 50, 40, 90);
+    shapes = &objRT2;
+    print_shapes(shapes);
+    IsoscelesTriangle objIT(10, 20, 10, 50, 60, 50);
+    shapes = &objIT;
+    print_shapes(shapes);
+    EquilateralTriangle objET(30, 30, 30, 60, 60, 60);
+    shapes = &objET;
+    print_shapes(shapes);
+    Quadrilateral objQuad(61, 4, 5, 6, 5, 4, 4, 5);
+    shapes = &objQuad;
+    print_shapes(shapes);
+    Rectangle objRec(10, 20, 10, 20, 90, 90, 90, 90);
+    shapes = &objRec;
+    print_shapes(shapes);
+    Square objSqu(20, 20, 20, 20, 90, 90, 90, 90);
+    shapes = &objSqu;
+    print_shapes(shapes);
+    Parallelogram objPar(20, 30, 20, 30, 30, 40, 30, 40);
+    shapes = &objPar;
+    print_shapes(shapes);
+    Rhomb objRmb(30, 30, 30, 30, 30, 40, 30, 40);
+    shapes = &objRmb;
+    print_shapes(shapes);
 }
 
